@@ -20,6 +20,10 @@
 		467FF2492AE298AA007F6569 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467FF2482AE298AA007F6569 /* LoginViewController.swift */; };
 		467FF24B2AE3D7DF007F6569 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467FF24A2AE3D7DF007F6569 /* TabBarController.swift */; };
 		467FF24F2AE51BE5007F6569 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 467FF24E2AE51BE5007F6569 /* GoogleService-Info.plist */; };
+		467FF2512AFD104D007F6569 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467FF2502AFD104D007F6569 /* Const.swift */; };
+		467FF2532AFF9DC8007F6569 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467FF2522AFF9DC8007F6569 /* PostData.swift */; };
+		467FF2562AFF9FF5007F6569 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467FF2542AFF9FF5007F6569 /* PostTableViewCell.swift */; };
+		467FF2572AFF9FF5007F6569 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 467FF2552AFF9FF5007F6569 /* PostTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		467FF2482AE298AA007F6569 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		467FF24A2AE3D7DF007F6569 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		467FF24E2AE51BE5007F6569 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		467FF2502AFD104D007F6569 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		467FF2522AFF9DC8007F6569 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		467FF2542AFF9FF5007F6569 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		467FF2552AFF9FF5007F6569 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		5D69BA0F68674298D3B2CC73 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		DCFD31B8CBD7810F8F4D4C0E /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +92,10 @@
 				467FF2462AE2987A007F6569 /* SettingViewController.swift */,
 				467FF24A2AE3D7DF007F6569 /* TabBarController.swift */,
 				467FF22C2AE28F6C007F6569 /* Main.storyboard */,
+				467FF2552AFF9FF5007F6569 /* PostTableViewCell.xib */,
+				467FF2542AFF9FF5007F6569 /* PostTableViewCell.swift */,
+				467FF2502AFD104D007F6569 /* Const.swift */,
+				467FF2522AFF9DC8007F6569 /* PostData.swift */,
 				467FF22F2AE28F6E007F6569 /* Assets.xcassets */,
 				467FF2312AE28F6E007F6569 /* LaunchScreen.storyboard */,
 				467FF2342AE28F6E007F6569 /* Info.plist */,
@@ -170,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				467FF2332AE28F6E007F6569 /* LaunchScreen.storyboard in Resources */,
+				467FF2572AFF9FF5007F6569 /* PostTableViewCell.xib in Resources */,
 				467FF24F2AE51BE5007F6569 /* GoogleService-Info.plist in Resources */,
 				467FF2302AE28F6E007F6569 /* Assets.xcassets in Resources */,
 				467FF22E2AE28F6C007F6569 /* Main.storyboard in Resources */,
@@ -225,14 +238,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467FF2562AFF9FF5007F6569 /* PostTableViewCell.swift in Sources */,
 				467FF2432AE29844007F6569 /* ImageSelectViewController.swift in Sources */,
 				467FF24B2AE3D7DF007F6569 /* TabBarController.swift in Sources */,
 				467FF2412AE29823007F6569 /* HomeViewController.swift in Sources */,
 				467FF2452AE2985F007F6569 /* PostViewController.swift in Sources */,
 				467FF2472AE2987A007F6569 /* SettingViewController.swift in Sources */,
+				467FF2532AFF9DC8007F6569 /* PostData.swift in Sources */,
 				467FF2492AE298AA007F6569 /* LoginViewController.swift in Sources */,
 				467FF2272AE28F6C007F6569 /* AppDelegate.swift in Sources */,
 				467FF2292AE28F6C007F6569 /* SceneDelegate.swift in Sources */,
+				467FF2512AFD104D007F6569 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +399,7 @@
 				DEVELOPMENT_TEAM = PSY3KFMNLB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instagram/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "本アプリは、画像の投稿及び編集のため、カメラの使用許可を求めます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -415,6 +432,7 @@
 				DEVELOPMENT_TEAM = PSY3KFMNLB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instagram/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "本アプリは、画像の投稿及び編集のため、カメラの使用許可を求めます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
