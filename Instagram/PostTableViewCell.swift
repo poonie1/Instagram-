@@ -18,7 +18,11 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var captionLabel: UILabel!
-
+    
+    @IBOutlet weak var commentButton: UIButton!
+    
+    @IBOutlet weak var commentLabel: UILabel!
+    
     // PostDataの内容をセルに表示
         func setPostData(_ postData: PostData) {
             // 画像の表示
@@ -36,6 +40,8 @@ class PostTableViewCell: UITableViewCell {
             let likeNumber = postData.likes.count
             likeLabel.text = "\(likeNumber)"
 
+            commentLabel.text = postData.comments.joined(separator: "\n")
+            
             // いいねボタンの表示
             if postData.isLiked {
                 let buttonImage = UIImage(named: "like_exist")
@@ -44,7 +50,12 @@ class PostTableViewCell: UITableViewCell {
                 let buttonImage = UIImage(named: "like_none")
                 self.likeButton.setImage(buttonImage, for: .normal)
             }
+            
+         
+            
         }
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

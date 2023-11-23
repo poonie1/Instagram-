@@ -4,16 +4,17 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="513" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="Instagram" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="364" height="513"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="572" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="Instagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="572"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="364" height="513"/>
+                <rect key="frame" x="0.0" y="0.0" width="364" height="572"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WFD-90-Fpd">
@@ -32,13 +33,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1z6-UF-C50">
-                        <rect key="frame" x="292.66666666666669" y="393.66666666666669" width="41.333333333333314" height="21"/>
+                        <rect key="frame" x="215" y="393.66666666666669" width="124" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d86-7y-B4q">
-                        <rect key="frame" x="30" y="434" width="304" height="58"/>
+                        <rect key="frame" x="30" y="434" width="304" height="20.333333333333314"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -52,19 +53,43 @@
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" title="Button" image="like_none"/>
                     </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLh-1h-Pmy">
+                        <rect key="frame" x="130" y="387" width="80" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="zBb-33-ChY"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="コメント">
+                            <color key="titleColor" systemColor="systemBlueColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lae-id-c5k">
+                        <rect key="frame" x="30" y="464.33333333333331" width="304" height="86.666666666666686"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="IEA-Ry-AVX" firstAttribute="top" secondItem="WFD-90-Fpd" secondAttribute="bottom" constant="10" id="2e3-e5-K3m"/>
+                    <constraint firstItem="Lae-id-c5k" firstAttribute="top" secondItem="d86-7y-B4q" secondAttribute="bottom" constant="10" id="67P-4m-TQ7"/>
                     <constraint firstItem="WFD-90-Fpd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9r9-5l-EjH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Lae-id-c5k" secondAttribute="trailing" constant="10" id="9yj-JG-nuV"/>
                     <constraint firstItem="ov7-BU-2hc" firstAttribute="leading" secondItem="IEA-Ry-AVX" secondAttribute="trailing" constant="10" id="Abz-TQ-YXn"/>
+                    <constraint firstItem="1z6-UF-C50" firstAttribute="centerY" secondItem="IEA-Ry-AVX" secondAttribute="centerY" id="DZT-lp-dpS"/>
                     <constraint firstItem="d86-7y-B4q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="J1I-V4-6XH"/>
+                    <constraint firstItem="ov7-BU-2hc" firstAttribute="centerY" secondItem="IEA-Ry-AVX" secondAttribute="centerY" id="PY7-TT-Lkw"/>
                     <constraint firstItem="IEA-Ry-AVX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Q14-lv-WBm"/>
                     <constraint firstItem="WFD-90-Fpd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="U7W-fQ-gEq"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="1z6-UF-C50" secondAttribute="trailing" constant="10" id="ahB-PN-4Jz"/>
                     <constraint firstItem="d86-7y-B4q" firstAttribute="top" secondItem="IEA-Ry-AVX" secondAttribute="bottom" constant="10" id="buY-cC-7oc"/>
                     <constraint firstAttribute="trailing" secondItem="WFD-90-Fpd" secondAttribute="trailing" id="cOg-5f-PHs"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="d86-7y-B4q" secondAttribute="bottom" constant="10" id="gg0-6V-SBR"/>
                     <constraint firstAttribute="trailingMargin" secondItem="d86-7y-B4q" secondAttribute="trailing" constant="10" id="i6u-RP-YCJ"/>
+                    <constraint firstItem="QLh-1h-Pmy" firstAttribute="centerY" secondItem="IEA-Ry-AVX" secondAttribute="centerY" id="iaJ-0q-ykN"/>
+                    <constraint firstItem="1z6-UF-C50" firstAttribute="leading" secondItem="QLh-1h-Pmy" secondAttribute="trailing" constant="5" id="jkc-mC-mMg"/>
+                    <constraint firstItem="QLh-1h-Pmy" firstAttribute="leading" secondItem="ov7-BU-2hc" secondAttribute="trailing" constant="10" id="lgN-H7-YWa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1z6-UF-C50" secondAttribute="trailing" constant="5" id="m5T-Tu-V39"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Lae-id-c5k" secondAttribute="bottom" constant="10" id="oSB-tY-tg1"/>
+                    <constraint firstItem="Lae-id-c5k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="qQh-CL-6ks"/>
                     <constraint firstItem="ov7-BU-2hc" firstAttribute="centerY" secondItem="IEA-Ry-AVX" secondAttribute="centerY" id="qmJ-Wr-rJH"/>
                     <constraint firstItem="1z6-UF-C50" firstAttribute="centerY" secondItem="IEA-Ry-AVX" secondAttribute="centerY" id="t7J-rE-Z88"/>
                 </constraints>
@@ -72,15 +97,20 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="captionLabel" destination="d86-7y-B4q" id="EWx-uZ-oDi"/>
+                <outlet property="commentButton" destination="QLh-1h-Pmy" id="QSu-eJ-UA1"/>
+                <outlet property="commentLabel" destination="Lae-id-c5k" id="xn0-bI-C3X"/>
                 <outlet property="dateLabel" destination="1z6-UF-C50" id="h8i-Ne-yfa"/>
                 <outlet property="likeButton" destination="IEA-Ry-AVX" id="Fos-N7-dGa"/>
                 <outlet property="likeLabel" destination="ov7-BU-2hc" id="Z5T-uZ-r1Y"/>
                 <outlet property="postImageView" destination="WFD-90-Fpd" id="4Tt-TY-cvr"/>
             </connections>
-            <point key="canvasLocation" x="90.07633587786259" y="44.014084507042256"/>
+            <point key="canvasLocation" x="90.07633587786259" y="64.788732394366207"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="like_none" width="40" height="40"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

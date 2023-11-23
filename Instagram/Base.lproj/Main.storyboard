@@ -309,6 +309,55 @@
             </objects>
             <point key="canvasLocation" x="1284.7328244274809" y="253.52112676056339"/>
         </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="yKB-lw-0Vs">
+            <objects>
+                <viewController storyboardIdentifier="Comment" id="09N-rC-FRl" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T6s-Hp-sK1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="btn_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="s2f-HZ-R58">
+                                <rect key="frame" x="30" y="159" width="333" height="116.66666666666669"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s2f-HZ-R58" secondAttribute="height" multiplier="97:34" id="G3q-Lf-8Wp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Le2-pZ-P3E">
+                                <rect key="frame" x="30" y="325.66666666666669" width="333" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Le2-pZ-P3E" secondAttribute="height" multiplier="94:35" id="vnu-7P-2BB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="【確定】"/>
+                                <connections>
+                                    <action selector="sendComment:" destination="09N-rC-FRl" eventType="touchUpInside" id="4k4-wz-7wn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jVZ-OF-58C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Le2-pZ-P3E" firstAttribute="top" secondItem="s2f-HZ-R58" secondAttribute="bottom" constant="50" id="39g-TU-NaS"/>
+                            <constraint firstItem="Le2-pZ-P3E" firstAttribute="leading" secondItem="jVZ-OF-58C" secondAttribute="leading" constant="30" id="A4i-y0-Eiu"/>
+                            <constraint firstItem="s2f-HZ-R58" firstAttribute="top" secondItem="jVZ-OF-58C" secondAttribute="top" constant="100" id="CId-RR-aQ4"/>
+                            <constraint firstItem="jVZ-OF-58C" firstAttribute="trailing" secondItem="s2f-HZ-R58" secondAttribute="trailing" constant="30" id="MZG-ea-kB2"/>
+                            <constraint firstItem="Le2-pZ-P3E" firstAttribute="centerX" secondItem="s2f-HZ-R58" secondAttribute="centerX" id="NdU-BW-sb5"/>
+                            <constraint firstItem="s2f-HZ-R58" firstAttribute="leading" secondItem="jVZ-OF-58C" secondAttribute="leading" constant="30" id="X4f-wb-yBR"/>
+                            <constraint firstItem="jVZ-OF-58C" firstAttribute="trailing" secondItem="Le2-pZ-P3E" secondAttribute="trailing" constant="30" id="opn-xH-3eV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentTextField" destination="s2f-HZ-R58" id="z0T-u8-lYa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wSm-4m-7zk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286" y="994"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="urq-uK-7Go">
             <objects>
@@ -332,6 +381,7 @@
     </scenes>
     <resources>
         <image name="btn" width="300" height="40"/>
+        <image name="btn_normal.png" width="256" height="256"/>
         <image name="camera" width="25" height="25"/>
         <image name="home" width="25" height="25"/>
         <image name="setting" width="25" height="25"/>
